@@ -141,7 +141,7 @@ $firstArr = [
       print_r($arrElements);
               echo "\n";
 
-//получить сумму всех значений в массиве
+//получить сумму всех значений в массиве +
         
 
      $arrayAmount = array_sum($firstArr); // cумма первого уровня = 6
