@@ -64,10 +64,23 @@
 
 </div>
 
+<div class="container">
+<h2 class="secondaryHeader">List</h2>
+<ul class="list-style">
+<?php
+$arr = ['Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+$html = '';
+foreach ($arr as $listItem) {
+$html .= '<li class="list-item">' . $listItem .'</li>';
+}
+echo $html;
+?>
+
+
+</ul>
+
+</div>
     
 </body>
 </html>
 
-<?php
-echo 1;
-?>
