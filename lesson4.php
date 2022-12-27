@@ -20,13 +20,13 @@
 <form class="form-data" action="server.php" method="post">
 
 <div class="form-block">
-<h4 class="form-header">Your full name</h4>
+<h4 class="form-header">Your full name*</h4>
   <input class ="form-input" type="text" name="Fname" placeholder="First name" required="required">
   <input class ="form-input" type="text" name="Lname" placeholder="Last name" required="required">
 </div>
 
 <div class="form-block">
-<h4 class="form-header">Contact info</h4>
+<h4 class="form-header">Contact info*</h4>
   <input class ="form-input" type="email" name="email" placeholder="example-mail@gmail.com" required="required">
   <input class ="form-input" type="tel" name="phone" placeholder="+3805077712217" required="required">
 </div>
@@ -35,7 +35,7 @@
 
 <h4 class="form-header">More data</h4>
 
-<label class ="form-label" for="сourse">Choose what you want to study</label>
+<label class ="form-label" for="сourse">Choose what you want to study*</label>
 <select name="course" id="course" required>
     <option value="">Please choose an option</option>
     <option value="html">HTML&CSS</option>
@@ -50,13 +50,12 @@
     <label for="friends">Friends</label><br>
     <input  type="radio" id="other" name="know_about" value="other">
     <label for="other">Other</label>
-
+    <p class="required-fields">* required fields</p>
     </div>
     <div class="form-block form-block--news" >
 
     <input type="checkbox" id="news" name="news" value="checked">
     <label class="input-newsletters" for="news">Update me on deals and special offers via email</label>
-
     </div>
 
 <button class="button" type="submit">Send</button>

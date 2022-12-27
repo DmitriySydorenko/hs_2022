@@ -14,6 +14,11 @@
     margin: 0 0 15px 0;
 }
 
+.required-fields {
+font-size: 15px;
+color: grey;
+margin: 10px 0 0 0;
+}
 .secondaryHeader {
     font-size: 25x;
     margin: 15px 0px;
