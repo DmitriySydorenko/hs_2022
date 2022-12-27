@@ -31,6 +31,11 @@
     padding: 0;
 }
 
+.form-block--news > input {
+    cursor: pointer;
+}
+
+
 .form-header {
     margin-top: 0px;
     font-size: 18px;
@@ -45,6 +50,7 @@
 .input-newsletters{
     margin: 10px 0;
     color:rgba(94, 0, 0, 0.801);
+    cursor: pointer;
 }
 .form-label {
     display: block;
