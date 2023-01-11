@@ -1,0 +1,17 @@
+{
+    "name": "hw7/hw7",
+    "description": "hw7 test project",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "hw7/"
+        }
+    },
+
+    "config": {
+        "optimize-autoloader":true,
+        "preferred-install":"dist",
+        "sort-packages": true
+    }
+}
