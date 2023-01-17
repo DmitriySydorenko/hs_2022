@@ -1,0 +1,10 @@
+RewriteEngine on
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php?path=$1 [NC,L,QSA]
+
+# Если оставляю строку №3,4, то содержание папки .htaccess не работает корректно.
+# Если оставляем две строки,то не редиректит на index.
+# Если оставляю строку закомментированной только сроку №4, то не редиректит на index.php если указываю url с реально существующим файлом php.
+
