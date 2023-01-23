@@ -8,18 +8,34 @@ class Router
 {
     public function run()
     {
-    $arr = explode('/', $_SERVER["REQUEST_URI"]);
-    if (empty($arr[1])) {
-        $arr[1] = 'home';
-    }
-    $className = '\App\controllers\\' . ucfirst($arr[1]);
+
+    $url =!empty ($_SERVER['REDIRECT_URL']) ?$_SERVER['REDIRECT_URL']: '/';
+    $config = require '../config/common.php';
+
+  if(array_key_exists($url,$config)){
+    $q = explode('@',$config[$url]);
+    $className = $q[0];
+    $methodName = $q[1];
+  } else {
+    $className = 'Error404';
+    $methodName = 'error';
+  }
+
+    $className = '\App\controllers\\' . $className;
+
     if(class_exists($className)){
         $classObj = new $className();
     } else {
         $classObj = new Error404();
     }
 
-    $classObj->index();
+    if(method_exists($classObj,$methodName)){
+        $classMethod = $methodName;
+    } else {
+        $classMethod = 'error';
+    }
+
+    $classObj-> index();
     }
 
 } 

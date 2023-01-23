@@ -1,10 +1,14 @@
 <?php
 
 namespace App\controllers;
+use App\controllers\models\Gallery as modelGallery;
 
-class Gallery 
+class Gallery extends Controller
 {
 public function index(){
-    echo "Gallery";
+   $gallery = new modelGallery();
+   $data['newKey'] = $gallery->index();
+   var_dump($gallery->index()); 
+   $this->render('social/gallery.php', $data);
 }
 } 

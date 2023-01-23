@@ -2,9 +2,11 @@
 
 namespace App\controllers;
 
-class Home 
+class Home extends Controller
 {
 public function index(){
-    echo "Home";
+
+  $this->render('social/home.php');
+
 }
 }
