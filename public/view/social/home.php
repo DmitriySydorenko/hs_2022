@@ -1,23 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Hello World</title>
+    <link rel="stylesheet" href='../public/view/social/style.css'>
+    <link rel="stylesheet" href='style.css'>
+    <title>HW Hillel MVC</title>
 </head>
 <body>
 
 
 <div class="container">
-<h1 class="mainHeader">Lesson 4 homework</h1>
-<p class="text">Some text</p>
+<h1 class="mainHeader">Model View Controller</h1>
+<p class="text">homework</p>
 
 
-<h2 class="secondaryHeader">Contact us</h2>
-<form class="form-data" action="server.php" method="post">
+<h2 class="secondaryHeader">Contact us form</h2>
+<form class="form-data" action="" method="POST">
 
 <div class="form-block">
 <h4 class="form-header">Your full name*</h4>
@@ -60,26 +60,3 @@
 
 <button class="button" type="submit">Send</button>
 </form> 
-
-</div>
-
-<div class="container">
-<h2 class="secondaryHeader">List</h2>
-<ul class="list-style">
-<?php
-$arr = ['Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-$html = '';
-foreach ($arr as $listItem) {
-$html .= '<li class="list-item">' . $listItem .'</li>';
-}
-echo $html;
-?>
-
-
-</ul>
-
-</div>
-    
-</body>
-</html>
-
