@@ -4,11 +4,11 @@ namespace App\controllers\models;
 
 class Gallery {
     public function index() {
-        return
-        [
-        'name' => 'Dmitry',
-        'age' => '30',
-        'course' => 'PHP',
-        ];
+
+        $dbh = new \PDO('mysql:host=localhost;dbname=testBase', 'root', 'root');
+        $sth = $dbh->query("SELECT * FROM Users");
+        $rows = $sth->fetchAll(\PDO::FETCH_ASSOC);
+
+        return $rows;
     }
 }

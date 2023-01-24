@@ -8,7 +8,6 @@ class Gallery extends Controller
 public function index(){
    $gallery = new modelGallery();
    $data['newKey'] = $gallery->index();
-   var_dump($gallery->index()); 
    $this->render('social/gallery.php', $data);
 }
 } 
