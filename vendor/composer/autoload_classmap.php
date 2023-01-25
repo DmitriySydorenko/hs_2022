@@ -15,4 +15,5 @@ return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Core\\Render' => $baseDir . '/core/Render.php',
     'Core\\Router' => $baseDir . '/core/Router.php',
+    'Core\\Select' => $baseDir . '/core/Select.php',
 );
